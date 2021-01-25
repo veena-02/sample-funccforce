@@ -1,14 +1,22 @@
 body{
-  background-color: #140e2b;
+  background-image:url("https://cdn.discordapp.com/attachments/799595587402072085/802135938246377492/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 nav{
-  background-color: white;
+  background-color: #000333;
+  width: 98vw;
+  background: linear-gradient(to right,#000333 , #042860);
   height: 80px;
+  color: whitesmoke;
+  box-shadow: 10px 5px 5px black;
 }
 /* Landing Page =---------------------------------------------------------------- Landing-page */
 .heading{
   color: white;
-  font-size: 4.2em;
+  font-size: 4.6em;
+  font-family: 'Lilita One', cursive;
 }
 .desc{
   color: white;
@@ -17,6 +25,9 @@ nav{
   margin-bottom: 1em;
 }
 .landing{
+  display: -webkit-flex; /* targets Chrome, Safari */
+  display:  -ms-flexbox; /* targets IE10*/
+  display: flex;
   margin: 7em 2em 2em 2em ;
 }
 .signup , .contact{
@@ -27,10 +38,28 @@ nav{
   font-size: 20px;
   border-radius: 15px;
 }
-.pic-gallery{
+.row1, .row2, .row3{
+  display: -webkit-flex; /* targets Chrome, Safari */
+  display:  -ms-flexbox; /* targets IE10*/
   display: flex;
   justify-content: center;
 }
-.pic{
-  border: white 2px solid;
+.hex{
+  height: 200px;
+  width: 200px;
+  background-image:url("https://bennettfeely.com/clippy/pics/miami.jpg");
+  background-size: cover;
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  margin: 4px;
+  box-shadow: inset 10px 5px 13px 4px #000333;
+  opacity: 0.5;
+}
+.hex-blank{
+  height: 200px;
+  width: 200px;
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+.hex:hover{
+  opacity: 1;
+  transform: perspective(300px) translateZ(30px);
 }
