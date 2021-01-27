@@ -38,28 +38,31 @@ nav{
   font-size: 20px;
   border-radius: 15px;
 }
-.row1, .row2, .row3{
+.row1, .row2, .row3, .row4{
   display: -webkit-flex; /* targets Chrome, Safari */
   display:  -ms-flexbox; /* targets IE10*/
   display: flex;
   justify-content: center;
 }
 .hex{
-  height: 200px;
-  width: 200px;
-  background-image:url("https://bennettfeely.com/clippy/pics/miami.jpg");
+  height: 20em;
+  width: 20em;
+  background-color: whitesmoke;
   background-size: cover;
-  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  clip-path: polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%);
   margin: 4px;
-  box-shadow: inset 10px 5px 13px 4px #000333;
   opacity: 0.5;
-}
-.hex-blank{
-  height: 200px;
-  width: 200px;
-  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
 }
 .hex:hover{
   opacity: 1;
   transform: perspective(300px) translateZ(30px);
+}
+.row2{
+  transform: translateY(-5em)
+}
+.row3{
+  transform: translate(-10em,-10em);
+}
+.row4{
+  transform: translate(-10em,-15em);
 }
